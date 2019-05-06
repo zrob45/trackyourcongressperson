@@ -1,0 +1,48 @@
+<!doctype html>
+<!-- <source src="./115senatemembers.js">  -->
+
+    <html lang="en">
+        <body>
+                <h3>Representatives</h3>
+                <table id="table" border="1" style="width:100%">
+                    <tr>
+                      <th>Firstname</th>
+                      <th>Lastname</th>
+                      <th>Party Loyalty %</th> 
+                    </tr>
+                  </table> 
+        </body>
+        </html>
+
+
+  <script src="./115senatemembers.js"></script>
+  <script >
+    var partyloyalty = [];
+    members.forEach(element => {
+      var partyloyaltyarray =[element.first_name,element.last_name,element.votes_with_party_pct];
+      // console.log(namearray)
+      partyloyalty.push(partyloyaltyarray)
+    });
+    console.log(partyloyalty);
+    table = document.getElementById("table");
+
+    for(var i = 0; i < partyloyalty.length; i++)
+           {
+               // create a new row
+               var newRow = table.insertRow(table.length);
+               console.log(partyloyalty[i].length);
+               for(var j = 0; j < partyloyalty[i].length; j++)
+               {
+                   // create a new cell
+                   var cell = newRow.insertCell(j);
+                   
+                  //  <a href="index2.html"><tr><td>example table data</td></tr></a>
+
+                   // add value to the cell
+                   cell.innerHTML = partyloyalty[i][j];
+               }
+              
+              // newRow.innerHTML = names[i];
+           }
+        </script>
+        
