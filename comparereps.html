@@ -1,0 +1,59 @@
+<!doctype html>
+
+    <html lang="en">
+        <body>
+
+<!-- User inputs last names of senators, become variables -->
+    <form id="form1" action="./comparerepsaction.html">
+        Senator 1 (Last Name):<br>
+        <input type="text" name="senator1" value=""><br>
+        Senator 2 (Last Name):<br>
+        <input type="text" name="senator2" value=""><br>
+        Vote 1 (ID#):<br>
+        <input type="text" name="vote1id"><br>
+        Vote 2 (ID#):<br>
+        <input type="text" name="vote2id"><br>
+        Vote 3 (ID#):<br>
+        <input type="text" name="vote3id"><br>
+        Vote 4 (ID#):<br>
+        <input type="text" name="vote4id"><br>
+        Vote 5 (ID#):<br>
+        <input type="text" name="vote5id"><br>
+        Vote 1 Position:<br>
+        <input type="text" name="vote1position"><br>
+        Vote 2 Position:<br>
+        <input type="text" name="vote2position"><br>
+        Vote 3 Position:<br>
+        <input type="text" name="vote3position"><br>
+        Vote 4 Position:<br>
+        <input type="text" name="vote4position"><br>
+        Vote 5 Position:<br>
+        <input type="text" name="vote5position"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+<!-- input id numbers of votes -->
+
+<!-- how would the user vote -->
+
+<!-- recall vote of senators on id# -->
+
+<!-- if user = senator, senator = senator + 1 -->
+
+<!-- display senator with highest score -->
+
+        
+
+        <script>
+                function othername() {
+                    var x = document.getElementById("form1");
+                    var i;
+                    for (i = 0; i < x.length ;i++) {
+                        text += x.elements[i].value + "<br>";
+                    }
+                    document.getElementById("demo").innerHTML = text;
+                }
+                // var input = document.getElementById('senator1').value;
+            </script>
+</body> 
+    </html>
