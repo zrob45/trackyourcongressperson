@@ -14,7 +14,7 @@ Our project includes numerous different features:
 
 ### Tools Used
 
-For this project, we coded in Virtual Studio Code in JS/HTML. We used the ProPublica Congressional API, which showed Congressional Members information and voting records. We also used the Google Material Design Lite "Dashboard" Template.
+For this project, we coded in Virtual Studio Code in JS/HTML. We used the ProPublica Congressional API, which showed Congressional Members information and voting records. We also used the Google Material Design Lite "Dashboard" Template. MongoDB served as a way to call information from the API to use in our project.
 
 ### License
 [MIT] (https://choosealicense.com/licenses/mit/)
