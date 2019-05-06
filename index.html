@@ -110,11 +110,9 @@
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation"></i>Home</a>
-          <a class="mdl-navigation__link" href="./index2.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation"></i>Compare Records</a>
+          <a class="mdl-navigation__link" href="./comparereps.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation"></i>Compare Records</a>
           <a class="mdl-navigation__link" href="./partyloyalty.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation"></i>Party Loyalty</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation"></i>Find Your Rep</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation"></i>Search Senate</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation"></i>Voting Success Rate</a>
           <div class="mdl-layout-spacer"></div>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
         </nav>
@@ -149,7 +147,8 @@
                   <th>Firstname</th>
                   <th>Lastname</th>
                   <th>Party Affiliation</th> 
-                  <th>State</th>  
+                  <th>State</th>
+                  <th>URL</th>  
                 </tr>
               </table> 
           </div>
@@ -234,7 +233,7 @@
           <td>Eve</td>
           <td>Jackson</td> 
           <td>94</td>
-        </tr>
+        </tr>                                     
       </table> 
       -->
       <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/dashboard/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">View Source</a>
@@ -244,7 +243,7 @@
   <script >
     var names = [];
     members.forEach(element => {
-      var namearray =[element.first_name,element.last_name,element.party,element.state];
+      var namearray =[element.first_name,element.last_name,element.party,element.state,element.url];
       // console.log(namearray)
       names.push(namearray)
     });
